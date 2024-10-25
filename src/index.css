@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*{
+  font-family: "Poppins", serif;
+}
+
+body{
+  background-color: #FDE9CC;
+  overflow-x: hidden;
+}
+
+
+
+.bg-gradient {
+    background: linear-gradient(to right,  #eacbae,  #AB6B2E);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
+  }
+  .bg-footer{
+    background: linear-gradient(to right,  hsl(29, 58%, 80%),  #AB6B2E);
+    
+  }
+
+
+  
+.sideBar {
+  position: absolute;
+  min-height: 100%;
+  min-width: 100%;
+  padding: 100px 50px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  backdrop-filter: blur(32px);
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  z-index: 9999;
+}
+.fade-out {
+  transform: translateX(100%);
+  opacity: 0;
+}
+
+
+.bg-home{
+  background: linear-gradient(to right,  hwb(29 68% 8%),  #AB6B2E);
+  padding: 6rem 1.5rem;
+}
+.h1{
+  word-spacing: 5px;
+}
+.button:hover{
+  border: 2px solid white;
+}
+
+
+.cofee{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+   z-index: -1;
+}
+.singlecofee{
+  width: 270px;
+}
+
+/* @media(max-width:768px) {
+  .singlecofee{
+    width: 40%;
+  }
+} */
+.button{
+  width: fit-content;
+}
+
+@media(max-width:480px) {
+  .singlecofee{
+    width: 100%;
+  }
+}
